@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagePerson"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#D3D3D3"
+        android:src="@drawable/person_icon">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/imagePerson"
+        android:background="#708090"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@id/imagePerson"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+    <ImageView
+        android:id="@+id/iconPerson"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+       android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imagePerson"
+        android:src="@drawable/person_img"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePerson"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iconPerson"
+        android:text="Name" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginRight="15dp"
+            android:hint="Name"
+            android:text=""/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/iconPhone"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/name"
+        android:src="@drawable/phone_icon"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iconPhone"
+        android:text="Phone Number" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPhone"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Phone Number"
+            android:text="" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@+id/phoneNumber"
+        android:text="Phone Type" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPhoneType"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:hint="Phone Type"
+            android:text="" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:id="@+id/iconEmail"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/phoneNumber"
+        android:src="@drawable/email_icon"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/phoneNumber"
+        android:layout_toRightOf="@+id/iconEmail"
+        android:text="Email" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmail"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
+            android:text="" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/phoneNumber"
+        android:layout_below="@id/phoneNumber"
+        android:text="Email Type" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editemailType"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:hint="Email Type"
+            android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneType"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:id="@+id/iconAddress"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/email"
+        android:src="@drawable/address_icon"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/email"
+        android:layout_toRightOf="@+id/iconAddress"
+        android:text="Address" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginRight="15dp"
+            android:hint="Address"
+            android:text=""/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iconCompany"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/address"
+        android:src="@drawable/company_icon"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/address"
+        android:layout_toRightOf="@+id/iconCompany"
+        android:text="Company" >
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginRight="15dp"
+        android:hint="Company"
+        android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>
