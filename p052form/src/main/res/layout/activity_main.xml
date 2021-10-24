@@ -28,14 +28,13 @@
 
     <ImageView
         android:id="@+id/iconPerson"
-        android:layout_width="30dp"
-        android:layout_height="50dp"
-       android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/imagePerson"
-        android:src="@drawable/person_img"
-        />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/person_img" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name"
@@ -57,14 +56,13 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <ImageView
         android:id="@+id/iconPhone"
         android:layout_width="30dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/name"
         android:src="@drawable/phone_icon"
         />
@@ -80,7 +78,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editPhone"
-            android:layout_width="190dp"
+            android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:hint="Phone Number"
@@ -88,48 +86,27 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/phoneType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_below="@id/name"
-        android:layout_toRightOf="@+id/phoneNumber"
-        android:text="Phone Type" >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editPhoneType"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp"
-            android:background="@color/white"
-            android:hint="Phone Type"
-            android:text="" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Spinner
         android:id="@+id/spinnerPhone"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/name"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/phoneNumber"
+        android:entries="@array/phoneType"
         android:spinnerMode="dropdown" />
 
     <ImageView
         android:id="@+id/iconEmail"
-        android:layout_width="30dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/phoneNumber"
-        android:src="@drawable/email_icon"
-        />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/email_icon" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
@@ -142,7 +119,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editEmail"
-            android:layout_width="190dp"
+            android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:hint="Email"
@@ -150,45 +127,25 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_toRightOf="@+id/phoneNumber"
-        android:layout_below="@id/phoneNumber"
-        android:text="Email Type" >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editemailType"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/name"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp"
-            android:background="@color/white"
-            android:hint="Email Type"
-            android:text="" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Spinner
         android:id="@+id/spinnerEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/phoneType"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_below="@id/spinnerPhone"
         android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/email"
+        android:entries="@array/emailType"
         android:spinnerMode="dropdown" />
 
     <ImageView
         android:id="@+id/iconAddress"
-        android:layout_width="30dp"
-        android:layout_height="50dp"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/email"
         android:src="@drawable/address_icon"
         />
@@ -215,9 +172,9 @@
 
     <ImageView
         android:id="@+id/iconCompany"
-        android:layout_width="30dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_below="@+id/address"
