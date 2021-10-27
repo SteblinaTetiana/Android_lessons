@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:text="REGISTER"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#ddadaf">
+        android:background="@drawable/custom_button">
 
     </Button>
 
@@ -116,7 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="REGISTER WITH FACEBOOK"
-        android:layout_marginTop="3dp">
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button1">
 
     </Button>
 
